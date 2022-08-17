@@ -44,12 +44,12 @@ export default function Header(props) {
           
           </li>
           <li>
-          <NavLink to="/explor">Explor More</NavLink>
+          <NavLink to="/category">Categories</NavLink>
 
            
           </li>
           <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
 
          
           </li>

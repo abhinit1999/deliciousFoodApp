@@ -5,6 +5,10 @@ import data from "./data";
 import Footer from "./components/Footer/index";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import Category from "./components/categories/Category"
+import Contact from "./components/contact/Contact"
+
+
 
 function App() {
   const { products } = data;
@@ -45,12 +49,19 @@ function App() {
        <Route path="/" element={
         <Main products={products} onAdd={onAdd}/>
        }/>
-       <Route path="/explor" element={
-        <Main products={products} onAdd={onAdd}/>
+       <Route path="/category" element={
+        // <Main products={products} onAdd={onAdd}/>
+       
+       <Category/>
        }/>
    
       {/* <div className="row"> */}
       
+       <Route path="/contact" element={
+        <Contact/>
+       }/>
+
+
         <Route path="/cart" element={
           <Basket
           cartItems={cartItems}
