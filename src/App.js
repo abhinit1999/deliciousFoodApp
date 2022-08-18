@@ -9,7 +9,6 @@ import Category from "./components/categories/Category"
 import Contact from "./components/contact/Contact"
 
 
-
 function App() {
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
@@ -38,6 +37,8 @@ function App() {
     }
   };
   return (
+
+    
     <div className="App">
       <Header countCartItems={cartItems.length}
       
@@ -74,6 +75,9 @@ function App() {
       <Footer/> 
 
     </div>
+
+      
+    
   );
 }
 

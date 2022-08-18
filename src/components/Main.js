@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "./Product";
-
+// import Category from "./categories/Category";
 export default function Main(props) {
   const { products, onAdd } = props;
   return (
@@ -17,7 +17,9 @@ export default function Main(props) {
       <h1 className="heading"> Delicious Food You</h1>
       <main>
         {products.map((product) => (
-          <Product key={product.id} product={product} onAdd={onAdd} />
+         <> <Product key={product.id} product={product} onAdd={onAdd} />
+        </>
+        
         ))}
       </main>
     </>
