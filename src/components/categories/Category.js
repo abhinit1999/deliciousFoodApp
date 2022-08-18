@@ -72,7 +72,7 @@ const Category = () => {
 
 
     <div className="serchbar">
-    <input type="text" placeholder='search items'
+    <input type="text" id='srch' placeholder='search items'
     
     value={input}
     onChange={(e)=>setInput(e.target.value)}
